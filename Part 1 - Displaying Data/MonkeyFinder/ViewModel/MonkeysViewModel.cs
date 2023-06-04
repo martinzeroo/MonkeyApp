@@ -53,6 +53,7 @@ public partial class MonkeysViewModel : BaseViewModel
             await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
         }
     }
+    [RelayCommand]
     async Task GetMonkeysAsync()
     {
         if (IsBusy)
